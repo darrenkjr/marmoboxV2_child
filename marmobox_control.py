@@ -26,7 +26,7 @@ taskmodule = loadtaskmodule(tasklist)
 
 
 mywin = visual.Window([1280, 720], monitor="testMonitor", units="pix", pos=(0, 0))
-taskmodule[0].run(mywin)
+taskmodule[1].run(mywin)
 
 
 
