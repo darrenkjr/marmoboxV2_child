@@ -1,10 +1,5 @@
-from psychopy import visual, event
-import time, datetime
-import pandas as pd
-from tasks.helper.initialisation import initial_param
-from tasks.helper.fixation import fixation
-from tasks.helper.initialisation import rng_choice
-# from touchresults import motion_coherence_results
+#testing touch latency
+
 
 def run(mywin):
     # setting initial parameters

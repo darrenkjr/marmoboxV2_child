@@ -4,6 +4,8 @@ import arduinocontrol as control
 from psychopy import visual
 import importlib
 
+#wait for input from main marmobox.
+
 tasklist = ['tasks.drawframesRL','tasks.motioncoherenceLRdir']
 
 #or load in required tasklist from json
@@ -28,5 +30,6 @@ taskmodule = loadtaskmodule(tasklist)
 mywin = visual.Window([1280, 720], monitor="testMonitor", units="pix", pos=(0, 0))
 taskmodule[1].run(mywin)
 
+#start session counting
 
 

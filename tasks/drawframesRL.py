@@ -32,6 +32,8 @@ def run(mywin):
             right_mask = visual.GratingStim(win=mywin, size=stim_size, pos=[1280 / 4, 0], opacity=0.0)
 
             test_im = visual.ImageStim(win=mywin, size=stim_size, pos=[-1280 / 4, 0], image=imagelist[counter])
+
+            #
             test_im1.draw()
             test_im2.draw()
             mywin.flip()
