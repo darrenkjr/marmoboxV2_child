@@ -25,7 +25,7 @@ while trial <= lim_trial:
 
     top_left_corner = visual.GratingStim(win=mywin, size=20, pos=[-(1280 / 2) + 20, (720 / 2) - 20], sf=0, color=color,
                                          colorSpace='rgb')
-    centre_grating = visual.GratingStim(win=mywin, size=700, pos=[0, 0], sf=0, color=centre_color, colorSpace='rgb')
+    centre_grating = visual.GratingStim(win=mywin, size=200, pos=[0, 0], sf=0, color=centre_color, colorSpace='rgb')
 
 
     centre_grating.draw()
@@ -35,8 +35,8 @@ while trial <= lim_trial:
     reaction_start = datetime.datetime.now()
 
     #add arduino photodiode class to sync times
-    print('Time start.')
-    
+    print('Time start. Signaling photodiode sync')
+
     mouse.clickReset()
     while not mouse.getPressed()[0]:
         #added sleep to prevent premature exit of script
@@ -44,11 +44,17 @@ while trial <= lim_trial:
 
     if mouse.isPressedIn(centre_grating):
         print('Hit')
+
         reaction_end = datetime.datetime.now()
-        #added sleep to account for time to click - to prevent continual triggering of sampling
-        time.sleep(0.1)
+        # average click takes around 100ms, thus sleep for 0.1s, systems sleeps unresponsive to further clicks
+        click_register_timeout = 0.5
+        time.sleep(click_register_timeout)
+
+
+
 
     time_delta = (reaction_end - reaction_start).total_seconds()
     trial += 1
     print('Time between display and touch (software): ',time_delta)
+
 
