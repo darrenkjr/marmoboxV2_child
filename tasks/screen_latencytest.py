@@ -27,12 +27,16 @@ while trial <= lim_trial:
                                          colorSpace='rgb')
     centre_grating = visual.GratingStim(win=mywin, size=700, pos=[0, 0], sf=0, color=centre_color, colorSpace='rgb')
 
-    print('Drawing!')
+
     centre_grating.draw()
     top_left_corner.draw()
+    print('Drawing!')
     mywin.update()
     reaction_start = datetime.datetime.now()
 
+    #add arduino photodiode class to sync times
+    print('Time start.')
+    
     mouse.clickReset()
     while not mouse.getPressed()[0]:
         #added sleep to prevent premature exit of script
