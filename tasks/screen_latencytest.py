@@ -35,8 +35,8 @@ while trial <= lim_trial:
     reaction_start = datetime.datetime.now()
 
     #add arduino photodiode class to sync times
-    print('Time start.')
-    
+    print('Time start. Signaling photodiode sync')
+
     mouse.clickReset()
     while not mouse.getPressed()[0]:
         #added sleep to prevent premature exit of script
