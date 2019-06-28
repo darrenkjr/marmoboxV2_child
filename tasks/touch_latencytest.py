@@ -26,7 +26,7 @@ if mouse.isPressedIn(grating) == True:
 
 		counter +=1
 		print(counter)
-		coord.append([(mouse.getPos()[0]),mouse.getPos()[1]])
+		coord.append((mouse.getPos()[0],mouse.getPos()[1]))
 
 if counter >1:
 	end_time = datetime.datetime.now()
@@ -34,9 +34,8 @@ if counter >1:
 	print((time_delta))
 
 
-uniques, counts = np.unique(coord,return_counts = True)
-print(uniques, counts)
-sample_rate = len(uniques) / time_delta
+coord = (list(set(coord)))
+sample_rate = len(coord) / time_delta
 
 print('Sample rate (per second): ', sample_rate)
 
