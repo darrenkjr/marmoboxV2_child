@@ -19,22 +19,21 @@ while not mouse.getPressed()[0]:
 
 if mouse.isPressedIn(grating) == True:
 	start_time = datetime.datetime.now()
+	coord = []
 	x_coord = []
 	y_coord = []
 	while mouse.isPressedIn(grating):
 
 		counter +=1
 		print(counter)
-		x_coord.append(mouse.getPos()[0])
-		y_coord.append(mouse.getPos()[1])
+		coord.append([(mouse.getPos()[0]),mouse.getPos()[1]])
 
 if counter >1:
 	end_time = datetime.datetime.now()
 	time_delta = (end_time - start_time).total_seconds()
 	print((time_delta))
-	coord = [x_coord,y_coord]
 
-print(counter,time_delta)
+
 uniques, counts = np.unique(coord,return_counts = True)
 print(uniques, counts)
 sample_rate = len(uniques) / time_delta
