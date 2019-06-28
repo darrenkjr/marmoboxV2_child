@@ -22,6 +22,7 @@ if mouse.isPressedIn(grating) == True:
 
 		counter +=1
 		print(counter)
+		print(mouse.getPos()[0],mouse.getPos()[1])
 
 if counter >1:
 	time_delta = (time.time() - start_time)

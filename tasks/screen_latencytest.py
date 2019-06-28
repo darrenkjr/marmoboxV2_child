@@ -1,9 +1,11 @@
 from psychopy import visual, event
 import time, datetime
+# from arduinocontrol import arduino_control as control
 
 mywin = visual.Window([1280, 720], monitor="testMonitor", units="pix", pos=(0, 0))
 mouse = event.Mouse(win=mywin)
 
+# control.connect()
 
 black = [-1,-1,-1]
 white = [1,1,1]
@@ -32,10 +34,11 @@ while trial <= lim_trial:
     top_left_corner.draw()
     print('Drawing!')
     mywin.update()
-    reaction_start = datetime.datetime.now()
+    screen_refresh = datetime.datetime.now()
 
     #add arduino photodiode class to sync times
     print('Time start. Signaling photodiode sync')
+
 
     mouse.clickReset()
     while not mouse.getPressed()[0]:
@@ -43,18 +46,17 @@ while trial <= lim_trial:
         time.sleep(0.01)
 
     if mouse.isPressedIn(centre_grating):
+        initial_touch = datetime.datetime.now()
         print('Hit')
+        while mouse.isPressedIn(centre_grating) is True:
+            print('Touch~~~')
 
-        reaction_end = datetime.datetime.now()
-        # average click takes around 100ms, thus sleep for 0.1s, systems sleeps unresponsive to further clicks
-        click_register_timeout = 0.1
-        time.sleep(click_register_timeout)
+        time_release = datetime.datetime.now()
 
-
-
-
-    time_delta = (reaction_end - reaction_start).total_seconds()
+    reaction_latency = (initial_touch - screen_refresh).total_seconds()
+    time_held = (time_release - initial_touch).total_seconds()
     trial += 1
-    print('Time between display and touch (software): ',time_delta)
+    print('Time between display and touch (software): ',reaction_latency)
+    print('Time of holding.', time_held)
 
 
