@@ -47,7 +47,7 @@ while trial <= lim_trial:
 
         reaction_end = datetime.datetime.now()
         # average click takes around 100ms, thus sleep for 0.1s, systems sleeps unresponsive to further clicks
-        click_register_timeout = 0.5
+        click_register_timeout = 0.1
         time.sleep(click_register_timeout)
 
 
