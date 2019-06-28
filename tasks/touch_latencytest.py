@@ -17,7 +17,7 @@ while not mouse.getPressed()[0]:
 	time.sleep(0.0001)
 
 if mouse.isPressedIn(grating) == True:
-	start_time = time.time()
+	start_time = datetime.datetime.now()
 	while mouse.isPressedIn(grating):
 
 		counter +=1
@@ -25,9 +25,12 @@ if mouse.isPressedIn(grating) == True:
 		print(mouse.getPos()[0],mouse.getPos()[1])
 
 if counter >1:
-	time_delta = (time.time() - start_time)
+	end_time = datetime.datetime.now()
+	time_delta = (end_time - start_time).total_seconds()
 	print((time_delta))
-	sample_rate = counter / time_delta
+
+print(counter,time_delta)
+sample_rate = counter / time_delta
 
 print('Sample rate (per second): ', sample_rate)
 
