@@ -37,7 +37,7 @@ if counter >1:
 print(counter,time_delta)
 uniques, counts = np.unique(coord,return_counts = True)
 print(uniques, counts)
-sample_rate = len(unique) / time_delta
+sample_rate = len(uniques) / time_delta
 
 print('Sample rate (per second): ', sample_rate)
 
