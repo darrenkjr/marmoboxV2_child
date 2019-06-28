@@ -52,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasks/touch_latencytest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="360">
+              <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -159,8 +159,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="160" />
-    <option name="y" value="38" />
+    <option name="x" value="254" />
+    <option name="y" value="75" />
     <option name="width" value="1500" />
     <option name="height" value="961" />
   </component>
@@ -247,7 +247,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="160" y="38" width="1500" height="961" extended-state="0" />
+    <frame x="254" y="75" width="1500" height="961" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.23394185" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -471,8 +471,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks/touch_latencytest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="360">
+          <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
