@@ -4,7 +4,7 @@ import numpy as np
 
 
 mywin = visual.Window([1280, 720], monitor="testMonitor", units="pix", pos=(0, 0))
-grating = visual.GratingStim(win=mywin, size=200, pos=[0,0], sf=0, color = [-1,-1,1], colorSpace='rgb')
+grating = visual.GratingStim(win=mywin, size=720, pos=[0,0], sf=0, color = [-1,-1,1], colorSpace='rgb')
 mouse = event.Mouse(win=mywin)
 
 
