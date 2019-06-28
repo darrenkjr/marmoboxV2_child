@@ -20,8 +20,6 @@ while not mouse.getPressed()[0]:
 if mouse.isPressedIn(grating) == True:
 	start_time = datetime.datetime.now()
 	coord = []
-	x_coord = []
-	y_coord = []
 	while mouse.isPressedIn(grating):
 
 		counter +=1
