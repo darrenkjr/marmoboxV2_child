@@ -1,4 +1,4 @@
 pyserial
 psychopy
-numpy = "*"
-pyaudio = "*"
+numpy
+pyaudio
