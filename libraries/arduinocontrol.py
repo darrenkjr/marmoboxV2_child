@@ -49,14 +49,32 @@ class arduino_control:
         return time
 
 
-class arduino_calibration:
+class arduino_screen_calibration:
     def __init__(self):
+        self.connect()
+        return
+    def connect(self):
+        '''
+        Initiate Uart Connection
+        '''
+        self.calib = serial.Serial('/dev/ttyACM0',115200,timeout=1)
+        #note that aruduino restarts on serial connection
+        time.sleep(0.5) #ensure that arduino has started before proceeding
         return
 
+    def disconnect(self):
+        '''
+        Disconnect from uart
+        '''
+        self.calib.close()
+        return
     def start_timer(self):
+
         return
 
-    def read_timer(self):
+    def read_timer(self,sleep_time=1):
         timer_value = 0
         #read delta time back from arduino on UART
+        time.sleep(sleep_time) # Need to wait for the screen to change
+        timer_value = self.calib.readline()
         return timer_value
