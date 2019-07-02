@@ -5,15 +5,18 @@ import importlib
 from tasks.helper.json_handler import json_handler
 import datetime
 
+
+
+#load in required tasklist and instructions from json and other paramters (animal_ID etc)
+# tasklist, limitTrial, animalID = json_handler.read_input()
+session = 0
+
 #wait for input from main marmobox.
 
 tasklist = ['tasks.touch-training0','tasks.touch-training1']
 animalID = 'test'
 limitTrial = 50
-session = 0
 
-#load in required tasklist and instructions from json and other paramters (animal_ID etc)
-tasklist, json_instructions = json_handler.read_input()
 
 
 #loading required tasks, and assigns each task a number

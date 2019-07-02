@@ -8,14 +8,18 @@ class json_handler:
         print('Initiating json handler. ')
 
 
-    def read_input(self):
+    def read_input(self,json_string):
         print('waiting for json signal')
 
 
         tasklist = 'placeholder'
         json_string = 'json instructions'
 
-        return tasklist, json_string
+        #unpack json
+        limitTrial = 'placeholder'
+        animalID = 'placeholder '
+
+        return tasklist, limitTrial, animalID
 
     def create_output(self,results,animal_ID,timestamp):
         # take in raw data, put into dictionary
