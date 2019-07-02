@@ -15,7 +15,8 @@ lim_trial = 5
 trial = 0
 
 centre_grating = visual.GratingStim(win=mywin, size=200, pos=[0, 0], sf=0, color=[-1,-1,-1], colorSpace='rgb')
-
+top_left_corner = visual.GratingStim(win=mywin, size=20, pos=[-(1280 / 2) + 20, (720 / 2) - 20], sf=0, color=[1,-1,1],
+                                         colorSpace='rgb')
 
 def wrapper(func, *args, **kwargs):
     def wrapped():
@@ -24,10 +25,12 @@ def wrapper(func, *args, **kwargs):
     return wrapped
 
 
-def drawing(centre_grating):
+def drawing(centre_grating,top_left_corner):
     centre_grating.draw()
+    top_left_corner.draw()
     mywin.update
+    print('test')
 
-wrapped = wrapper(drawing,centre_grating)
+wrapped = wrapper(drawing,centre_grating, top_left_corner)
 t = timeit.timeit(wrapped, number = 1000)
 print(t/1000)
