@@ -18,9 +18,9 @@ centre_grating = visual.GratingStim(win=mywin, size=200, pos=[0, 0], sf=0, color
 top_left_corner = visual.GratingStim(win=mywin, size=20, pos=[-(1280 / 2) + 20, (720 / 2) - 20], sf=0, color=[1,-1,1],
                                          colorSpace='rgb')
 
-def wrapper(func, *args, **kwargs):
+def wrapper(func, *args):
     def wrapped():
-        return func(*args, **kwargs)
+        return func(*args)
 
     return wrapped
 
