@@ -30,8 +30,9 @@ def drawing(centre_grating,top_left_corner):
     top_left_corner.draw()
     mywin.update()
     print('test')
-    mywin.close()
 
 wrapped = wrapper(drawing,centre_grating, top_left_corner)
+
 t = timeit.timeit(wrapped, number = 1000)
+mywin.close()
 print(t/1000)
