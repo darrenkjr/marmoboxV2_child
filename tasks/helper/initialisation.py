@@ -5,7 +5,7 @@ import numpy as np
 
 def initial_param(mywin):
     mouse = event.Mouse(win=mywin)
-    trial = 1
+    trial = 0
     nulls = 0
     timer = time.time()
     xpos = 0

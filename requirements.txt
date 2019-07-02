@@ -1,4 +1,8 @@
 pyserial
 psychopy
 numpy
+<<<<<<< HEAD
 pyaudio
+=======
+pyaudio
+>>>>>>> 02600a3abb441804810c4b529c6f7c9f9278879c

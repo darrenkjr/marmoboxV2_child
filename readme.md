@@ -19,3 +19,6 @@ Run
 <pre>
 $ pip3 install -r requirements.txt
 </pre>
+
+# Other Instructions
+1. To install SSH follow this guide: <link> https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/ </link>

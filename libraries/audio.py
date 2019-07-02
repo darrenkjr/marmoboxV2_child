@@ -5,6 +5,7 @@ import numpy as np
 from ctypes import * 
 #https://stackoverflow.com/questions/7088672/pyaudio-working-but-spits-out-error-messages-each-time
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
+
 def py_error_handler(filename, line, function, err, fmt):
     pass
     #print ('messages are yummy')

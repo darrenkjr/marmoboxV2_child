@@ -60,7 +60,7 @@ def run(mywin):
                 mywin.flip()
 
             time_delta = (datetime.datetime.now() - time_start).total_seconds()
-            print('Time taken to draw 100 frames', time_delta)
+            print('Time taken to draw 60 frames', time_delta)
 
         # print('presenting options')
         # stop = False
