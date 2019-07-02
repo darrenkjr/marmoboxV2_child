@@ -28,8 +28,9 @@ def wrapper(func, *args, **kwargs):
 def drawing(centre_grating,top_left_corner):
     centre_grating.draw()
     top_left_corner.draw()
-    mywin.update
+    mywin.update()
     print('test')
+    mywin.close()
 
 wrapped = wrapper(drawing,centre_grating, top_left_corner)
 t = timeit.timeit(wrapped, number = 1000)

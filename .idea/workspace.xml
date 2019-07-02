@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/progression_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/progression_logic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/touchtraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/touchtraining.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/testing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasks/testing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="387">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -250,7 +251,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="152" y="112" width="1616" height="886" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33103448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -553,16 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-          <folding>
-            <element signature="e#63#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/helper/json_handler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -590,6 +580,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+          <folding>
+            <element signature="e#63#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/motioncoherenceLRdir.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
@@ -599,8 +599,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks/testing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="387">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
