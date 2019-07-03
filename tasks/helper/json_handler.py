@@ -1,4 +1,5 @@
 import json
+import requests
 
 #take output dictionary, dump into json.
 
@@ -21,7 +22,7 @@ class json_handler:
 
         return tasklist, limitTrial, animalID
 
-    def create_output(self,results,animal_ID,timestamp):
+    def create_output(self,results,animal_ID,timestamp,url):
         # take in raw data, put into dictionary
 
         print('creating json output for sending to central server. ')
@@ -32,5 +33,6 @@ class json_handler:
         }
 
         json_out_string = json.dumps(json_out_dict)
-
         #send json to server / datawarehouse
+        requests.post(url,json_out_string)
+

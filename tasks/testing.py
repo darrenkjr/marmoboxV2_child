@@ -26,10 +26,12 @@ def wrapper(func, *args):
 
 
 def drawing(centre_grating,top_left_corner):
+    mywin
     centre_grating.draw()
     top_left_corner.draw()
     mywin.update()
     print('test')
+
 
 wrapped = wrapper(drawing,centre_grating, top_left_corner)
 
