@@ -2,3 +2,4 @@ pyserial
 psychopy
 numpy
 pyaudio
+flask
