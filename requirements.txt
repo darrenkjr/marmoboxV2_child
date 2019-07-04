@@ -2,4 +2,10 @@ pyserial
 psychopy
 numpy
 pyaudio
+<<<<<<< HEAD
 flask
+=======
+Flask
+requests
+pymongo
+>>>>>>> acc4e055839957df666d79f7bbb80b2c1d127eee
