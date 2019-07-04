@@ -10,6 +10,7 @@ pyserial = "*"
 numpy = "*"
 PsychoPy = "*"
 PyAudio = "*"
+flask = "*"
 
 [requires]
 python_version = "3.7"

@@ -20,15 +20,16 @@ def loadtaskmodule(tasklist):
 
     return taskmodule
 
-def __old_main(debug,json_command=None):
+def __old_main():
     '''
         Main function for marmobox_control.py
     '''
     #load in required tasklist and instructions from json and other paramters (animal_ID etc)
-    tasklist, limitTrial, animalID = json_handler.read_input()
+    # tasklist, limitTrial, animalID = json_handler.read_input()
     session = 0
     #server url
-    json_handler = json_handler()
+    
+    jsonHandler = json_handler()
     url = 'https://ptsv2.com/t/lg7zg-1562113615/post'
     #wait for json input from main marmobox.
     #listen on port & unpack required parameters
@@ -39,14 +40,17 @@ def __old_main(debug,json_command=None):
     taskmodule = loadtaskmodule(tasklist)
 
     trial_response = []
-    for i in range(len(tasklist)):
-        mywin = visual.Window([1280, 720], monitor="testMonitor", units="pix", pos=(0, 0))
-        results = taskmodule[i].run(tasklist[i],limitTrial,mywin,animalID,session) #args = taskname,limitTrial,mywin,animal_ID,session
-        timestamp = datetime.datetime.now()
-        #send output and results
-        json_output = json_handler().create_output(results,animalID,str(timestamp),url)
-        trial_response.append(json_output)
-        mywin.close()
+    mywin = visual.Window([1280, 720], monitor="testMonitor", units="pix", pos=(0, 0))
+    results = taskmodule[0].run(tasklist[0],animalID,session)
+    mywin.close()
+    # for i in range(len(tasklist)):
+    #     mywin = visual.Window([1280, 720], monitor="testMonitor", units="pix", pos=(0, 0))
+    #     results = taskmodule[i].run(tasklist[i],animalID,session) #args = taskname,limitTrial,mywin,animal_ID,session
+    #     timestamp = datetime.datetime.now()
+    #     #send output and results
+    #     json_output = jsonHandler.create_output(results,animalID,str(timestamp),url)
+    #     trial_response.append(json_output)
+    #     mywin.close()
 
     #start session counting
     return trial_response
@@ -58,7 +62,7 @@ def execute_command(json_command):
     #load in required tasklist and instructions from json and other paramters (animal_ID etc)
     jsonHandler = json_handler()
     taskname, animalID = jsonHandler.read_input(json_command)
-    taskname = 'tasks.screen_latencytest'
+    # taskname = 'tasks.screen_latencytest'
     session = 0
 
     taskmodule = importlib.import_module(taskname)
@@ -67,7 +71,11 @@ def execute_command(json_command):
     results = taskmodule.run(taskname,animalID,session) #args = taskname,limitTrial,mywin,animal_ID,session
     timestamp = datetime.datetime.now()
     json_output = jsonHandler.create_json_output(results,animalID,str(timestamp))
+
+    json_output = ['test']
     return json_output
 
 if __name__ == "__main__":
-    execute_command()
+    # __old_main()
+    json_command = '{"taskname":"tasks.touch-training0","animal_ID":"test"}'
+    execute_command(json_command)
