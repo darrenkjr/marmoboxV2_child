@@ -57,15 +57,16 @@ def execute_command(json_command):
     '''
     #load in required tasklist and instructions from json and other paramters (animal_ID etc)
     jsonHandler = json_handler()
-    task, animalID = jsonHandler.read_input(json_command)
+    taskname, animalID = jsonHandler.read_input(json_command)
+    taskname = 'tasks.screen_latencytest'
     session = 0
 
-    taskmodule = importlib.import_module(task)
-    mywin = visual.Window([1280, 720], monitor="testMonitor", units="pix", pos=(0, 0))
-    results = taskmodule[0].run(task,limitTrial,mywin,animalID,session) #args = taskname,limitTrial,mywin,animal_ID,session
+    taskmodule = importlib.import_module(taskname)
+
+    print('running ', taskname)
+    results = taskmodule.run(taskname,animalID,session) #args = taskname,limitTrial,mywin,animal_ID,session
     timestamp = datetime.datetime.now()
     json_output = jsonHandler.create_json_output(results,animalID,str(timestamp))
-    mywin.close()
     return json_output
 
 if __name__ == "__main__":

@@ -6,10 +6,11 @@ import pandas as pd
 
 
 
-def run(taskname,limitTrial,mywin,animal_ID,session):
-
+def run(taskname, animal_ID,session):
+	mywin = visual.Window([1280, 720], monitor="testMonitor", units="pix", pos=(0, 0))
 	mouse, trial, nulls, timer, xpos, ypos, touchTimeout, correct, wrong, hits, null, miss, results, summary = initial_param(mywin)
 
+	print('debug message')
 	#dummies
 	stimPosx = 0
 	stimPosy = 0
@@ -18,6 +19,7 @@ def run(taskname,limitTrial,mywin,animal_ID,session):
 	#create #blue stimulus
 	grating = visual.GratingStim(win=mywin, size=stim_size, pos=[stimPosx,stimPosy], sf=0, color = [-1,-1,1], colorSpace='rgb' )
 
+	limitTrial = 5
 	while trial < limitTrial:
 
 		t=time.time() #returns time in sec as float
@@ -31,8 +33,8 @@ def run(taskname,limitTrial,mywin,animal_ID,session):
 
 		while not mouse.getPressed()[0]:# checks whether mouse button (i.e. button '0') was pressed
 			time.sleep(0.01) # Sleeps if not pressed and then checks again after 10ms
-			
-		
+
+
 		if mouse.isPressedIn(grating):
 			print('Hit!')
 			initial_touch = datetime.datetime.now()
@@ -69,6 +71,7 @@ def run(taskname,limitTrial,mywin,animal_ID,session):
 
 		trial += 1
 		print(trial)
+		mywin.close()
 
 	return results
 
