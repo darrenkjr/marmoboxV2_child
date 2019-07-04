@@ -31,21 +31,9 @@ while trial <= lim_trial:
     centre_grating = visual.GratingStim(win=mywin, size=200, pos=[0, 0], sf=0, color=centre_color, colorSpace='rgb')
 
 
-
-
-    def wrapper(func, *args, **kwargs):
-        def wrapped():
-            return func(*args, **kwargs)
-        return wrapped
-
-    def drawing(centre_grating):
-        centre_grating.draw()
-
-    wrapped = wrapper(drawing,centre_grating)
-    timeit.timeit(wrapped, number = 1000)
-
-    timeit.timeit(drawing(centre_grating))
     top_left_corner.draw()
+    centre_grating.draw()
+
     print('Drawing!')
     mywin.update()
     screen_refresh = datetime.datetime.now()

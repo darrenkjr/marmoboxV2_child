@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="013fae89-bf51-455c-9f02-0afefa9d76e2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/http_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/http_server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmobox_master.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmobox_master.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/progression_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/progression_logic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/touchtraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/touchtraining.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,57 +19,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/marmobox_control.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-276">
-              <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libraries/arduinocontrol.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-843" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/helper/json_handler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/screen_latencytest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="29" column="58" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="29" selection-end-column="58" />
+            <state relative-caret-position="525">
+              <caret line="44" column="86" lean-forward="true" selection-start-line="44" selection-start-column="86" selection-end-line="44" selection-end-column="86" />
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#115#142#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tasks/testing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/motioncoherenceLRdir.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -77,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/marmobox_master.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+            <state relative-caret-position="225">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="e#50#76#0" expanded="true" />
               </folding>
@@ -89,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+            <state relative-caret-position="537">
+              <caret line="59" column="31" lean-forward="true" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
               <folding>
                 <element signature="e#63#79#0" expanded="true" />
               </folding>
@@ -99,10 +53,65 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/touchtraining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="50" column="93" selection-start-line="50" selection-start-column="93" selection-end-line="50" selection-end-column="93" />
+            <state relative-caret-position="435">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/touch-training1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/touch_latencytest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/http_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,7 +119,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/progression_logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="402">
               <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
             </state>
           </provider>
@@ -139,28 +148,30 @@
       <list>
         <option value="$PROJECT_DIR$/tasks/drawframesRL.py" />
         <option value="$PROJECT_DIR$/tasks/touch_latencytest.py" />
-        <option value="$PROJECT_DIR$/tasks/touch-training1.py" />
         <option value="$PROJECT_DIR$/tasks/helper/initialisation.py" />
         <option value="$PROJECT_DIR$/tasks/touch-training0.py" />
         <option value="$PROJECT_DIR$/libraries/audio.py" />
         <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/json.py" />
-        <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmobox_master.py" />
         <option value="$PROJECT_DIR$/tasks/motioncoherenceLRdir.py" />
-        <option value="$PROJECT_DIR$/marmobox_control.py" />
         <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/progression_logic.py" />
-        <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/touchtraining.py" />
-        <option value="$PROJECT_DIR$/tasks/helper/json_handler.py" />
-        <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py" />
         <option value="$PROJECT_DIR$/tasks/screen_latencytest.py" />
+        <option value="$PROJECT_DIR$/tasks/helper/json_handler.py" />
+        <option value="$PROJECT_DIR$/tasks/touch-training1.py" />
         <option value="$PROJECT_DIR$/tasks/testing.py" />
+        <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/http_server.py" />
+        <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/touchtraining.py" />
+        <option value="$PROJECT_DIR$/marmobox_control.py" />
+        <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py" />
+        <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmobox_master.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="277" />
-    <option name="y" value="111" />
-    <option name="width" value="1616" />
-    <option name="height" value="886" />
+    <option name="x" value="131" />
+    <option name="y" value="33" />
+    <option name="width" value="1689" />
+    <option name="height" value="931" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -262,9 +273,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="277" y="111" width="1616" height="886" extended-state="0" />
+    <frame x="131" y="33" width="1689" height="931" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33103448" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31654677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -275,15 +286,15 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32871535" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4996865" visible="true" weight="0.3816121" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50031346" side_tool="true" visible="true" weight="0.3816121" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3274559" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.6666667" weight="0.3611442" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.33333334" side_tool="true" weight="0.3611442" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49940047" weight="0.32657927" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33103448" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.31654677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -294,9 +305,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32871535" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3816121" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.3274559" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.6666667" weight="0.3611442" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.33333334" side_tool="true" weight="0.3611442" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.49940047" visible="true" weight="0.32657927" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -321,16 +332,6 @@
     <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/touch-training4-1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1825" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/drawframesRL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/__init__.py">
@@ -405,16 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/touch_latencytest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/touch-training2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -425,22 +416,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/touch-training2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/touch-training0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/touch-training1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="58" column="73" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -473,16 +451,6 @@
     <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/reports.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/touch-training0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-651">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/touch-training3.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -503,20 +471,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/json.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -541,34 +495,134 @@
     <entry file="file://$PROJECT_DIR$/libraries/reward_tones.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/progression_logic.py">
+    <entry file="file://$PROJECT_DIR$/libraries/arduinocontrol.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/touchtraining.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="50" column="93" selection-start-line="50" selection-start-column="93" selection-end-line="50" selection-end-column="93" />
+          <caret line="78" column="43" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks/screen_latencytest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="29" column="58" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="29" selection-end-column="58" />
+        <state relative-caret-position="195">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/motioncoherenceLRdir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/touch-training0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/helper/json_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/touch-training2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/touch_latencytest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/drawframesRL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/http_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/progression_logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marmobox_control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="44" column="86" lean-forward="true" selection-start-line="44" selection-start-column="86" selection-end-line="44" selection-end-column="86" />
+          <folding>
+            <element signature="e#115#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/touch-training1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/touchtraining.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/marmobox_master.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+        <state relative-caret-position="225">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="e#50#76#0" expanded="true" />
           </folding>
@@ -577,47 +631,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+        <state relative-caret-position="537">
+          <caret line="59" column="31" lean-forward="true" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
           <folding>
             <element signature="e#63#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/arduinocontrol.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-843" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/helper/json_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/marmobox_control.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/motioncoherenceLRdir.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
