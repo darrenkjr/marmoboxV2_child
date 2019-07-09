@@ -1,5 +1,5 @@
-from psychopy import visual, core, logging, event
-import time, random, datetime, math
+from psychopy import visual
+import time, datetime
 
 class fixation:
 

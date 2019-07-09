@@ -1,6 +1,5 @@
-from psychopy import visual, core, logging, event
-import time, random, datetime, math
-import numpy as np
+from psychopy import event
+import time
 
 
 def initial_param(mywin):
@@ -21,14 +20,6 @@ def initial_param(mywin):
 
     return mouse, trial,nulls,timer,xpos,ypos, touchTimeout,correct,wrong,hits,null, miss, results, summary
 
-def rng_choice(possible_selection,limitTrial):
-
-    choice = np.repeat([0, possible_selection -1], math.floor(limitTrial / 2))
-    if math.floor(limitTrial % 2) > 0:
-        choice = np.append(choice, random.randint(0, 1))
-    np.random.shuffle(choice)
-
-    return choice
 
 
 

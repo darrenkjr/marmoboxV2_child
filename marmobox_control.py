@@ -1,14 +1,36 @@
 #import classes from arduino control and from tasks - runs declared tasks, pre-import required modules + packages
-import json
-import time
 from psychopy import visual
 import importlib
 from tasks.helper.json_handler import json_handler
 import datetime
 import multiprocessing as mp
-import os
-from http.server import BaseHTTPRequestHandler, HTTPServer
 from flask import render_template, Flask, jsonify, request
+from libraries.reward_penalty_control import reward
+
+
+def execute_command(q_in,q_out):
+    '''
+        Main function for marmobox_control.py
+    '''
+    mywin = visual.Window([1280, 720], monitor="testMonitor", units="pix", pos=(0, 0))
+
+
+    while True:
+        #while script is running, listen for get requqests from server.
+        json_command = q_in.get()
+        # load in required tasklist and instructions from json and other paramters (animal_ID etc)
+        jsonHandler = json_handler()
+        taskname, animalID,  level, instructions = jsonHandler.read_input(json_command)
+        taskmodule = importlib.import_module(taskname)
+
+        print('running ', taskname, level)
+        results = taskmodule.run(mywin,instructions) #args = taskname,limitTrial,mywin,animal_ID,session, instructions (dictionary)
+        time_end = datetime.datetime.now()
+        json_output = jsonHandler.create_json_output(results,animalID,str(time_end)) #results, is a list, animalID and timestamp are strings
+        q_out.put(json_output)
+        mywin.update()
+
+    mywin.close()
 
 def loadtaskmodule(tasklist):
     '''
@@ -24,26 +46,6 @@ def loadtaskmodule(tasklist):
 
     return taskmodule
 
-def execute_command(q_in,q_out):
-    '''
-        Main function for marmobox_control.py
-    '''
-    # mywin = visual.Window([1280, 720], monitor="testMonitor", units="pix", pos=(0, 0))
-    while True: 
-        json_command = q_in.get()
-        # load in required tasklist and instructions from json and other paramters (animal_ID etc)
-        jsonHandler = json_handler()
-        taskname, animalID = jsonHandler.read_input(json_command)
-        session = 0
-        taskmodule = importlib.import_module(taskname)
-
-        print('running ', taskname)
-        results = taskmodule.run(taskname,animalID,session) #args = taskname,limitTrial,mywin,animal_ID,session
-        timestamp = datetime.datetime.now()
-        json_output = jsonHandler.create_json_output(results,animalID,str(timestamp))
-        json_output = 'test_complete'
-        q_out.put(json_command)
-
 # Create a URL route in our application for "/"
 if __name__ == "__main__":
     mp.set_start_method('spawn')
@@ -51,6 +53,7 @@ if __name__ == "__main__":
     q_out = mp.Queue()
 app = Flask(__name__)
 # Create a URL route in our application for "/"
+
 @app.route('/', methods=["GET","POST"])
 def main():
     '''
@@ -59,8 +62,9 @@ def main():
     json_string = request.data
     q_in.put(json_string)
     out = q_out.get()
-    print("The output is: {0}".format(out))
-    return jsonify({out})
+    json_out = jsonify(out)
+    print(json_out)
+    return json_out
 
 if __name__ == "__main__":
     json_command = '{"taskname":"tasks.touch-training0","animal_ID":"test"}'

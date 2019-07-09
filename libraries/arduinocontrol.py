@@ -78,3 +78,4 @@ class arduino_screen_calibration:
         time.sleep(sleep_time) # Need to wait for the screen to change
         timer_value = self.calib.readline()
         return timer_value
+

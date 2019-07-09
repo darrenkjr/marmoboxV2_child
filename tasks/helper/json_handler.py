@@ -16,8 +16,9 @@ class json_handler:
         # task = 'tasks.touch-training0'
         # animalID = 'F1234_test'
         print('waiting for json signal')
-        json_string = json.loads(json_string)
-        print(type(json_string))
+        print(json_string)
+        json_string = json.loads(json.loads(json_string.decode('utf-8')))
+        print(json_string, type(json_string))
 
         # taskname = json_string.task if 'taskname' in json_string else 'default'
         taskname = json_string.get('taskname')
@@ -25,7 +26,10 @@ class json_handler:
         # animalID = json_string.animal_ID if 'animal_ID' in json_string else 'F1234_test'
         animalID = json_string.get('animal_ID')
         print(animalID)
-        return taskname, animalID
+        #get instructions (task specific)
+        instructions = json_string.get('instructions')
+        level = json_string.get('level')
+        return taskname, animalID, level, instructions
 
     def create_json_output(self,results,animal_ID,timestamp):
         json_out_dict = {
