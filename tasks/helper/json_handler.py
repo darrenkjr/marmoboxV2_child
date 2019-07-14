@@ -31,24 +31,6 @@ class json_handler:
         level = json_string.get('level')
         return taskname, animalID, level, instructions
 
-    def create_json_output(self,results,animal_ID,timestamp):
-        json_out_dict = {
-            'results': results, 'Animal ID': animal_ID, 'timestamp': timestamp
-        }
-        return  json_out_dict
-
-    def create_output(self,results,animal_ID,timestamp,url):
-        # take in raw data, put into dictionary
-
-        print('creating json output for sending to central server. ')
-
-        #creating dictionary
-        json_out_dict = {
-            'results' : results, 'Animal ID' : animal_ID, 'timestamp' : timestamp
-        }
-
-        json_out_string = json.dumps(json_out_dict)
-        #send json to server / datawarehouse
-        requests.post(url,json_out_string)
-        return json_out_dict
-
+    def create_json_output(self,results):
+        json_out = results
+        return  json_out

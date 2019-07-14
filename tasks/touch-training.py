@@ -3,7 +3,7 @@ import time, datetime
 from tasks.helper.initialisation import initial_param
 from libraries import arduinocontrol as control
 
-
+''' touchtraining script for marmobox. Takes in instructions as json files and executes according to progression level'''
 
 def run(mywin,instructions):
 	mouse, trial, nulls, timer, xpos, ypos, touchTimeout, correct, wrong, hits, null, miss, results, summary = initial_param(mywin)
@@ -11,6 +11,8 @@ def run(mywin,instructions):
 	#unpack instructions from json dict
 	print(instructions)
 	stim_size, color, stim_coord, time_penalty = instructions.values()
+	#stim type = size of stimulus + rgb code
+	stim_type = str(stim_size.append(color))
 
 	#create #blue stimulus
 	grating = visual.GratingStim(win=mywin, size=stim_size, pos=stim_coord, sf=0, color = color, colorSpace='rgb' )
@@ -21,7 +23,6 @@ def run(mywin,instructions):
 	screen_refresh = datetime.datetime.now()
 
 	mouse.clickReset() #resets a timer for timing button clicks
-
 
 	while not mouse.getPressed()[0]:# checks whether mouse button (i.e. button '0') was pressed
 		time.sleep(0.01) # #added sleep to prevent premature exit of script
@@ -46,7 +47,8 @@ def run(mywin,instructions):
 		reaction_latency = (initial_touch - screen_refresh).total_seconds()
 		time_held = (time_release - initial_touch).total_seconds()
 		#results for this session, 1 = success, 0 = fail
-		results.append([time_stamp,xpos,ypos,stim_coord,reaction_latency, time_held, 1, hits,miss,null])
+		results += [screen_refresh.strftime("%H:%M %p"), xpos, ypos, stim_type, stim_coord, reaction_latency, time_held, 1,
+							hits, miss, null]
 
 	else:
 		initial_touch = datetime.datetime.now()
@@ -56,9 +58,6 @@ def run(mywin,instructions):
 		# trigger penalty
 		# control.wrong()
 		core.wait(time_penalty)
-
-
-		print(results)
 		miss+=1
 
 		while mouse.isPressedIn(grating):
@@ -68,11 +67,10 @@ def run(mywin,instructions):
 		reaction_latency = (initial_touch - screen_refresh).total_seconds()
 		time_held = (time_release - initial_touch).total_seconds()
 		# results for this session, 1 = success, 0 = fail
-		results.append([screen_refresh.strftime("%H:%M %p"), xpos, ypos, stim_coord, reaction_latency, time_held, 0, hits, miss, null])
+		results += results + [screen_refresh.strftime("%H:%M %p"), xpos, ypos, stim_type, stim_coord, reaction_latency, time_held, 0, hits, miss, null]
 
-
-	time_end = datetime.datetime.now().strftime("%H:%M %p")
-	results.append(time_end)
+	trial_end = str(datetime.datetime.now())
+	results += [trial_end]
 	print(results)
 	return results
 

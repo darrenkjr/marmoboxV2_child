@@ -5,6 +5,7 @@ from tasks.helper.json_handler import json_handler
 import datetime
 import multiprocessing as mp
 from flask import render_template, Flask, jsonify, request
+import json
 from libraries.reward_penalty_control import reward
 
 
@@ -25,8 +26,8 @@ def execute_command(q_in,q_out):
 
         print('running ', taskname, level)
         results = taskmodule.run(mywin,instructions) #args = taskname,limitTrial,mywin,animal_ID,session, instructions (dictionary)
-        time_end = datetime.datetime.now()
-        json_output = jsonHandler.create_json_output(results,animalID,str(time_end)) #results, is a list, animalID and timestamp are strings
+        print(results)
+        json_output = jsonHandler.create_json_output(results) #results, is a list
         q_out.put(json_output)
         mywin.update()
 
@@ -62,7 +63,7 @@ def main():
     json_string = request.data
     q_in.put(json_string)
     out = q_out.get()
-    json_out = jsonify(out)
+    json_out = json.dumps(out)
     print(json_out)
     return json_out
 
