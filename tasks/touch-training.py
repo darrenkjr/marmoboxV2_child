@@ -10,12 +10,14 @@ def run(mywin,instructions):
 
 	#unpack instructions from json dict
 	print(instructions)
-	stim_size, color, stim_coord, time_penalty = instructions.values()
+	stim_size, color, stim_coord, time_penalty = instructions['Stimulus size'],instructions['Stimulus color'],instructions['Stimulus coordinates'],instructions['ITI for Wrong Response']
 	#stim type = size of stimulus + rgb code
-	stim_type = str(stim_size.append(color))
+	stim_s = stim_size
+	stim_type = str(stim_s+color)
 
 	#create #blue stimulus
-	grating = visual.GratingStim(win=mywin, size=stim_size, pos=stim_coord, sf=0, color = color, colorSpace='rgb' )
+	print(stim_size)
+	grating = visual.GratingStim(win=mywin, size=stim_size, pos=stim_coord, sf=0, color=color, colorSpace='rgb' )
 	grating.draw()
 	print('Drawing!')
 	mywin.update()

@@ -1,8 +1,7 @@
 #import classes from arduino control and from tasks - runs declared tasks, pre-import required modules + packages
-from psychopy import visual
+from psychopy import visual, core
 import importlib
 from tasks.helper.json_handler import json_handler
-import datetime
 import multiprocessing as mp
 from flask import render_template, Flask, jsonify, request
 import json
@@ -25,6 +24,7 @@ def execute_command(q_in,q_out):
         taskmodule = importlib.import_module(taskname)
 
         print('running ', taskname, level)
+        print(instructions)
         results = taskmodule.run(mywin,instructions) #args = taskname,limitTrial,mywin,animal_ID,session, instructions (dictionary)
         print(results)
         json_output = jsonHandler.create_json_output(results) #results, is a list
