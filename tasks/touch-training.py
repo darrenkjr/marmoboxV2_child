@@ -37,7 +37,7 @@ def run(mywin,instructions):
 		# control.correct()
 
 		#do this from server
-		time_stamp = datetime.datetime.now().strftime("%H:%M %p")
+
 
 		print(results)
 		hits += 1
@@ -49,7 +49,7 @@ def run(mywin,instructions):
 		reaction_latency = (initial_touch - screen_refresh).total_seconds()
 		time_held = (time_release - initial_touch).total_seconds()
 		#results for this session, 1 = success, 0 = fail
-		results += [screen_refresh.strftime("%H:%M %p"), xpos, ypos, stim_type, stim_coord, reaction_latency, time_held, 1,
+		results += [str(screen_refresh.strftime('%d-%b-%Y %I:%M:%S %p')), xpos, ypos, stim_type, stim_coord, reaction_latency, time_held, 1,
 							hits, miss, null]
 
 	else:
@@ -69,10 +69,10 @@ def run(mywin,instructions):
 		reaction_latency = (initial_touch - screen_refresh).total_seconds()
 		time_held = (time_release - initial_touch).total_seconds()
 		# results for this session, 1 = success, 0 = fail
-		results += results + [screen_refresh.strftime("%H:%M %p"), xpos, ypos, stim_type, stim_coord, reaction_latency, time_held, 0, hits, miss, null]
+		results += results + [str(screen_refresh), xpos, ypos, stim_type, stim_coord, reaction_latency, time_held, 0, hits, miss, null]
 
-	trial_end = str(datetime.datetime.now())
-	results += [trial_end]
+	trial_end = str(datetime.datetime.now().strftime('%d-%b-%Y %I:%M:%S %p'))
+	results += [trial_end]	q
 	print(results)
 	return results
 
