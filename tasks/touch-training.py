@@ -13,7 +13,7 @@ def run(mywin,instructions):
 	stim_size, color, stim_coord, time_penalty = instructions['Stimulus size'],instructions['Stimulus color'],instructions['Stimulus coordinates'],instructions['ITI for Wrong Response']
 	#stim type = size of stimulus + rgb code
 	stim_s = stim_size
-	stim_type = str(stim_s+color)
+	stim_type = [stim_s,color]
 
 	#create #blue stimulus
 	print(stim_size)
@@ -72,7 +72,7 @@ def run(mywin,instructions):
 		results += results + [str(screen_refresh), xpos, ypos, stim_type, stim_coord, reaction_latency, time_held, 0, hits, miss, null]
 
 	trial_end = str(datetime.datetime.now().strftime('%d-%b-%Y %I:%M:%S %p'))
-	results += [trial_end]	q
+	results += [trial_end]
 	print(results)
 	return results
 

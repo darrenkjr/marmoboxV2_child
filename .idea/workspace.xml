@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="013fae89-bf51-455c-9f02-0afefa9d76e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmobox_master.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmobox_master.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/marmoio.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/progression_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/progression_logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/touchtraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bourne_marmoboxV2/server/protocol_exp/touchtraining.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasks/touch-training.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/touch-training.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/marmobox_master.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="330">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#55#82#0" expanded="true" />
               </folding>
@@ -32,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasks/helper/json_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="465">
               <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -96,11 +92,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libraries/titration.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libraries/audio.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
@@ -116,6 +107,18 @@
               <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
               <folding>
                 <element signature="e#112#167#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/data/database_sql.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="179" column="15" lean-forward="true" selection-start-line="179" selection-start-column="15" selection-end-line="179" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,13 +178,14 @@
         <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/testing.py" />
         <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/database_sql.py" />
         <option value="$PROJECT_DIR$/tasks/touch-training.py" />
+        <option value="$PROJECT_DIR$/../bourne_marmoboxV2/server/data/database_sql.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="368" />
-    <option name="y" value="51" />
-    <option name="width" value="1544" />
+    <option name="x" value="754" />
+    <option name="y" value="41" />
+    <option name="width" value="1166" />
     <option name="height" value="991" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -222,6 +226,12 @@
               <item name="marmoboxV2_child" type="b2602c69:ProjectViewProjectNode" />
               <item name="bourne_marmoboxV2" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="marmoboxV2_child" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bourne_marmoboxV2" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -286,10 +296,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="368" y="51" width="1544" height="991" extended-state="0" />
-    <editor active="true" />
+    <frame x="754" y="41" width="1166" height="991" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25147736" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3344978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -300,7 +309,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32852387" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.6666667" visible="true" weight="0.36151278" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.6666667" weight="0.36151278" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.33333334" side_tool="true" weight="0.3611442" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49940047" weight="0.3259177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -397,7 +406,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/http_server.py" />
     <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/archive/kev.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -642,16 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/helper/json_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/helper/initialisation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -696,12 +694,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/helper/json_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/marmobox_master.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#55#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bourne_marmoboxV2/server/data/database_sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="179" column="15" lean-forward="true" selection-start-line="179" selection-start-column="15" selection-end-line="179" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
