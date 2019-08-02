@@ -10,7 +10,7 @@ def run(mywin,instructions):
 
 	#unpack instructions from json dict
 	print(instructions)
-	stim_size, color, stim_coord, time_penalty = instructions['Stimulus size'],instructions['Stimulus color'],instructions['Stimulus coordinates'],instructions['ITI for Wrong Response']
+	stim_size, color, stim_coord, time_penalty, validTrial = instructions['Stimulus size'],instructions['Stimulus color'],instructions['Stimulus coordinates'],instructions['ITI for Wrong Response'], instructions['Valid Trial']
 	#stim type = size of stimulus + rgb code
 	stim_s = stim_size
 	stim_type = [stim_s,color]
@@ -50,7 +50,7 @@ def run(mywin,instructions):
 		time_held = (time_release - initial_touch).total_seconds()
 		#results for this session, 1 = success, 0 = fail
 		results += [str(screen_refresh.strftime('%d-%b-%Y %I:%M:%S %p')), xpos, ypos, stim_type, stim_coord, reaction_latency, time_held, 1,
-							hits, miss, null]
+							hits, miss, null,validTrial]
 
 	else:
 		initial_touch = datetime.datetime.now()
@@ -69,7 +69,7 @@ def run(mywin,instructions):
 		reaction_latency = (initial_touch - screen_refresh).total_seconds()
 		time_held = (time_release - initial_touch).total_seconds()
 		# results for this session, 1 = success, 0 = fail
-		results += results + [str(screen_refresh), xpos, ypos, stim_type, stim_coord, reaction_latency, time_held, 0, hits, miss, null]
+		results += results + [str(screen_refresh.strftime('%d-%b-%Y %I:%M:%S %p')), xpos, ypos, stim_type, stim_coord, reaction_latency, time_held, 0, hits, miss, null,validTrial]
 
 	trial_end = str(datetime.datetime.now().strftime('%d-%b-%Y %I:%M:%S %p'))
 	results += [trial_end]
