@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="013fae89-bf51-455c-9f02-0afefa9d76e2" name="Default Changelist" comment="" />
+    <list default="true" id="013fae89-bf51-455c-9f02-0afefa9d76e2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/marmobox_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/marmobox_control.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,16 +16,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>rolling_avg_success</find>
-      <find>stimPo</find>
-      <find>checking</find>
-      <find>database</find>
-      <find>task</find>
-      <find>animalID</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570080004189</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changed marmobox control default test">
+      <created>1570080009695</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570080009695</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
