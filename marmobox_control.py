@@ -68,12 +68,12 @@ def main():
     return json_out
 
 if __name__ == "__main__":
-    json_command = '{"taskname":"tasks.touch-training0","animal_ID":"test"}'
+    # json_command = '{"taskname":"tasks.touch-training0","animal_ID":"test"}'
     # q_in.put(json_command)
     p = mp.Process(target=execute_command, args=(q_in,q_out))
     p.start()
-    # server_address = ('', 8000)
-    # httpd = HTTPServer(server_address,BaseHTTPRequestHandler)
-    # httpd.serve_forever()
+    server_address = ('', 8000)
+    httpd = HTTPServer(server_address,BaseHTTPRequestHandler)
+    httpd.serve_forever()
     app.run(debug=True)
     p.join()
