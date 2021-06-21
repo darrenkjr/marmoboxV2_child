@@ -1,3 +1,6 @@
+#marmoboxV2_child
+MarmoboxV2 - mini pc code. - To be Run on animal stimuli pc. To start, run marmobox_control.py and follow prompts. 
+
 # Introduction
 Project Marmobox is an automated, modular system for in cage operant conditioning of marmosets. It is a hardware + service that automates the training of marmosets in simple behavioural tasks, and allows for seamless interrogation of behavioural tasks and rudimentary data analysis and visualisation. 
 
