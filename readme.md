@@ -35,7 +35,7 @@ The central server, handles communication with a  SQL database, (To be run separ
 
 # Difference with Marmobox V1
 
-We've set up version 2 to tackle the folllwing shortocoings from Version 1: 
+We've set up version 2 to tackle the folllwing shortocomings from Version 1: 
 
 - The codebase isn't really scalable as we'd like. We've used spreadsheets and it is usable for a single system. However, we envision a fleet of these systems controlled by 1 single server (see master version in the other repo) https://github.com/darrenkjr/bourne_marmoboxV2_master and so we've moved to a sql database environment 
 - In essence, the processing power of Marmobox V1 is not sufficient for more graphically intensive tasks. CPU Processing bottlenecks result in unreliable data, especially during progression to non-static tests, such as motion coherence tasks, with more reliance on temporal data.
